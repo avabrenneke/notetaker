@@ -4,7 +4,7 @@ const path = require("path");
 const fs = require("fs");
 const app = express();
 //Set port
-const port = 4044;
+const PORT = process.env.PORT || 3000;
 const mainDir = path.join(__dirname, "/public");
 
 app.use(express.static('public'));
@@ -64,6 +64,6 @@ app.use(express.json());
 
     
 //console.log to check port and app functionality 
-    app.listen(port, function () {
-        console.log(`Now listening on port ${port}. `);
+    app.listen(PORT, function () {
+        console.log(`Now listening on port ${PORT}. `);
     })
