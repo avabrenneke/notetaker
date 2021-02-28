@@ -4,7 +4,7 @@ const path = require("path");
 const fs = require("fs");
 const app = express();
 //Set port
-const port = 2020;
+const port = 4040;
 const mainDir = path.join(__dirname, "/public");
 
 app.use(express.static('public'));
