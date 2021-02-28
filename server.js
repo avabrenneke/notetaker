@@ -61,6 +61,8 @@ app.use(express.json());
         fs.writeFileSync("./db/db.json", JSON.stringify(savedNotes));
         res.json(savedNotes);
     })
+
+    
 //console.log to check port and app functionality 
     app.listen(port, function () {
         console.log(`Now listening on port ${port}. `);
